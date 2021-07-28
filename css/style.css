@@ -1,0 +1,221 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* Navigation Bar: Logo and Images */
+#logo{
+    margin: 7px 30px;
+}
+#logo img{
+    height: 56px;
+    margin: 27px 17px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 85%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 357px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 80%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'KoHo', sans-serif;
+}
+#home p{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'KoHo', sans-serif;
+}
+
+/* Service Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 8px;
+    margin: 1px 18px;
+    border-radius: 39px;
+    background-color:  #fbf2f2;
+    margin-bottom: 10px;
+    margin-top: -14px;
+}
+
+#services .box img{
+    height: 106px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+    font-family: 'KoHo', sans-serif;
+    font-weight: bold;
+}
+
+/* Clients Section  */
+#client-scetion{
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg4.jpg');
+    width: 100%;
+    height: 49%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 123px;
+}
+.client-item{
+    padding: 42px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url('../bg7.jpg') no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    height: 1.9rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'KoHo', sans-serif;
+    font-weight: bold;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2.6rem;
+    font-family: 'KoHo', sans-serif;
+    padding: 18px;
+}
+.h-secondary{
+    font-family: 'KoHo', sans-serif;
+    font-size: 2.3rem;
+    padding: 18px;
+}
+.btn{
+    padding: 6px 19px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1.4rem;
+    margin: 19px;
+    border-radius: 13px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
